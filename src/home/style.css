@@ -1,0 +1,56 @@
+.home{
+  height: 100vh;
+  background-image: url(./bgimage.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+.home_container{
+  padding: 30px;
+  height: 100%;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 20px;
+align-items: center;
+
+} 
+.home_container h1{
+  color:  brown;
+  font-size:    6rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+.home_container div p{
+  font-size: 2rem;
+  text-align: center;
+}
+.home_container div button{
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.725);
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .home_container h1{
+    
+    font-size:    3rem;
+ 
+  
+  }
+  .home_container div p{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .home_container div button{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.725);
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}

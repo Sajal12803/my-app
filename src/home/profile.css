@@ -1,0 +1,104 @@
+/* Background */
+.profile-background {
+  background: url('bgimage.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+/* Smaller Form Container Box */
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  width: 90vh; /* Smaller width for a compact look */
+  height: 90vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+/* .sec {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+h2 {
+  text-align: center;
+  color: #e76f51;
+  margin-bottom: 15px;
+}
+
+form div {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  font-weight: bold;
+  display: inline;
+  margin-bottom: 5px;
+  width: 20%;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.gender-options {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.gender-options label{
+  display: flex;
+}
+
+
+button {
+  background-color: #e76f51;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f4a261;
+}
+
+.center-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meet{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+
+}
+.meet-options{
+  width: 100%;
+}

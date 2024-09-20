@@ -1,0 +1,93 @@
+.loginpage {
+  font-family: Arial, sans-serif;
+  background-color:  rgb(240, 230, 230);
+}
+
+.logon-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 230, 230);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.input-field{
+  background: transparent !important;
+  outline-style: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: solid #000000 10px;
+  box-shadow: 0 0 0 !important;
+  -webkit-box-shadow: 0 0 0 !important;
+}
+
+.logon-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgb(202, 196, 196);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+.elders {
+  border-top: 7px solid #ffffff;
+}
+
+.volunteers {
+  border-top: 7px solid #d3d937;
+}
+
+.family {
+  border-top: 7px solid #37d937;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.elders-icon {
+  background-image: url('elderaidimg.jpg'); /* Replace with your elders icon */
+  
+}
+
+.volunteers-icon {
+  background-image: url('volunteerimg.jpg'); /* Replace with your volunteers icon */
+}
+
+.family-icon {
+  background-image: url('familyimg.jpg'); /* Replace with your family icon */
+}
+
+.logon-button {
+  display: flex;
+  flex-direction:row ;
+  justify-content: center;
+  background-color: #fca503;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 70px;
+}
+
+.welcome-elder{
+  font-size: 50px;
+  font-weight: lighter;
+
+}
