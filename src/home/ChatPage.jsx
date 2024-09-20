@@ -47,7 +47,7 @@ const ChatPage = () => {
     <div className="flex flex-col h-screen bg-gray-100">
       <header className="bg-orange-400 text-white p-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/api/placeholder/40/40" alt="ElderAid Logo" className="w-8 h-8 mr-2" />
+          
           <h1 className="text-xl font-bold">ElderAid</h1>
         </div>
         <h2 className="text-lg">All Messages</h2>
@@ -72,7 +72,7 @@ const ChatPage = () => {
               onClick={() => handleVolunteerSelect(volunteer)}
             >
               <div className="flex items-center">
-                <img src="/api/placeholder/40/40" alt={volunteer.name} className="w-10 h-10 rounded-full mr-3" />
+                <img src={`https://avtarmaker-z1sa.onrender.com/avatar/${volunteer.name}`} alt={volunteer.name} className="w-10 h-10 rounded-full mr-3" />
                 <div>
                   <h3 className="font-semibold">{volunteer.name}</h3>
                   <p className="text-sm text-gray-600">{volunteer.lastMessage}</p>
