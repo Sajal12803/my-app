@@ -50,7 +50,7 @@ const ChatPage = () => {
           
           <h1 className="text-xl font-bold">ElderAid</h1>
         </div>
-        <h2 className="text-lg">All Messages</h2>
+        <h2 className="text-xl font-bold text-white">All Messages</h2>
         <Menu className="w-6 h-6" />
       </header>
 
