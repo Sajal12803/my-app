@@ -1,12 +1,16 @@
 import React from 'react';
- import { useNavigate ,Link} from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './loginpage.css';
 
 const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleLogin = (type) => {
-    navigate("/login");
+    if (type === 'volunteers') {
+      navigate("/volunteers");
+    } else {
+      navigate("/login");
+    }
   };
 
   return (
@@ -23,11 +27,13 @@ const LoginPage = () => {
         <button onClick={() => handleLogin('volunteers')} className="login-button">Login</button>
       </div>
 
-     <Link to={'/ElderWelcome'}> <div className="login-card family">
-        <div className="icon family-icon"></div>
-        <h2>Family</h2>
-        <button onClick={() => handleLogin('family')} className="login-button">Login</button>
-      </div></Link>
+      <Link to={'/ElderWelcome'}>
+        <div className="login-card family">
+          <div className="icon family-icon"></div>
+          <h2>Family</h2>
+          <button onClick={() => handleLogin('family')} className="login-button">Login</button>
+        </div>
+      </Link>
     </div>
   );
 };

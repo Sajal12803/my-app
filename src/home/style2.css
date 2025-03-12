@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    color: #ff7f27;
+    text-align: center;
+}
+
+.sidebar input {
+    width: 95%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chat-list {
+    list-style: none;
+    padding: 0;
+}
+
+#chat-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-list li:hover {
+    background-color: #f7f7f7;
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.chat-header {
+    background-color: #ff7f27;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* #chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+} */
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background-color: #ff7f27;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.chat-options {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.type-btn, .voice-btn {
+    background-color: #ff7f27;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu {
+    width: 20%;
+    background-color: #fff;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #f7f7f7;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #ffa07a;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.voice {
+    background-color: #d3d3d3;
+    align-self: flex-end;
+    text-align: right;
+}
+
+#voice-controls {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#mic-btn, #stop-btn, #send-voice-btn, #delete-voice-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mic-btn {
+    background-color: green;
+    color: white;
+}
+
+#stop-btn {
+    background-color: red;
+    color: white;
+}
+
+#send-voice-btn {
+    background-color: blue;
+    color: white;
+}
+
+#delete-voice-btn {
+    background-color: gray;
+    color: white;
+}

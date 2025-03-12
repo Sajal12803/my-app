@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElderAid Chat</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>ElderAid</h2>
+            <input type="text" id="search" placeholder="Search">
+            <ul id="chat-list">
+                <li onclick="openChat('Elder 2')">Elder 2 <span>5:06 pm</span></li>
+                <li onclick="openChat('Elder 3')">Elder 3 <span>5:00 pm</span></li>
+                <li onclick="openChat('Elder 6')">Elder 6 <span>4:59 pm</span></li>
+                <li onclick="openChat('Elder 5')">Elder 5 <span>4:56 pm</span></li>
+                <li onclick="openChat('Elder 1')">Elder 1 <span>3:41 pm</span></li>
+                <li onclick="openChat('Elder 4')">Elder 4 <span>3:06 pm</span></li>
+                <li onclick="openChat('Elder 8')">Elder 8 <span>2:59 pm</span></li>
+            </ul>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header" id="chat-header">All Messages</div>
+            <div id="chat-box"></div>
+
+            <!-- Text Chat Input -->
+            <div class="chat-input" id="text-chat">
+                <input type="text" id="message" placeholder="Type your message..." disabled>
+                <button id="send-btn" onclick="sendMessage()" disabled>&#10148;</button>
+            </div>
+
+            <!-- Voice Chat Input -->
+            <div class="chat-input" id="voice-chat" style="display: none;">
+                <button id="mic-btn" onclick="toggleRecording()">🎤</button>
+                <span id="timer">00:00</span>
+            </div>
+
+            <!-- Chat Options -->
+            <div class="chat-options">
+                <button class="type-btn" id="type-btn" onclick="enableTyping()" disabled>Type</button>
+                <button class="voice-btn" id="voice-btn" onclick="startVoiceChat()" disabled>Voice Chat</button>
+            </div>
+
+            <!-- Voice Chat Controls -->
+            <div class="voice-controls" id="voice-controls" style="display: none;">
+                <button onclick="sendVoiceMessage()">Send</button>
+                <button onclick="cancelVoiceMessage()">Delete</button>
+            </div>
+        </div>
+
+        <!-- Side Menu -->
+        <div class="menu" id="menu">
+            <ul>
+                <li onclick="navigate('profile.html')">Profile</li>
+                <li onclick="navigate('reminders.html')">Reminders</li>
+                <li onclick="navigate('payments.html')">Payments</li>
+                <li onclick="navigate('medical_reports.html')">Medical Report</li>
+                <li onclick="navigate('signin.html')">Logout</li>
+            </ul>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+</body>
+</html>

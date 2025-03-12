@@ -11,16 +11,10 @@ const NAVVbar = () => {
 
   return (
     <div className="nav_main">
-    <div className="nav-container">
-      {/* Elder Aid Title */}
-      <h1 className="logo">Elder Aid</h1>
-
-      {/* Profile (Centered & White Color) */}
-      <span className="nav-profile">Profile</span>
-
-      {/* Menu Icon */}
-      <div className="menu-icon" onClick={toggleMenu}>☰</div>
-    </div>
+      <div className="nav-container">
+        <h1>Elder Aid</h1>
+        <div className="menu-icon" onClick={toggleMenu}>☰</div>
+      </div>
       
      
       {/* Sliding Menu */}
@@ -38,7 +32,7 @@ const NAVVbar = () => {
         </div>
 
         {/* Messages */}
-        <div className="menu-item" onClick={() => { navigate("/ChatPage"); closeMenu(); }}>
+        <div className="menu-item" onClick={() => { navigate("/PageVolunteer"); closeMenu(); }}>
           <div className="icon-container">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>

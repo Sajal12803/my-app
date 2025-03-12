@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarr from '../nav/NavBarr';
+import NavBarr from '../nav/NAVVbar';
 import { User } from 'lucide-react';
 
 const ElderCard = ({ name, location, language }) => {

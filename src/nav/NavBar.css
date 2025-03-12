@@ -1,11 +1,12 @@
 .nav_main {
   width: 100%;
   height: 10vh;
-  background-color:  #fc9403;
+  background-color: #FFB266; /* Light orange color */
   display: flex;
   justify-content: center;
   padding: auto 10px;
 }
+
 .nav-container {
   width: 100%;
   display: flex;
@@ -16,6 +17,11 @@
   margin-left: 10px;
 }
 
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 /* Navbar container (for demonstration purposes) */
 .navbar {
   display: flex;
@@ -24,13 +30,64 @@
   background-color: #333; /* Dark background for navbar */
 }
 
-.log-outbarr{
+.log-outbarr {
   color: black;
   font-weight: bold;
   background-color: white;
 }
-.barrh1{
+
+.barrh1 {
   font-size: xx-large;
   font-weight: bold;
-  
+}
+
+.slide-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.slide-menu.open {
+  right: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #f9f9f9;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.menu-item span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }

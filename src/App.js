@@ -4,8 +4,8 @@ import { Home } from "./home/home";
 import ChatPage from "./home/ChatPage";
 import ElderProfile from "./home/ElderProfile";
 import ElderWelcome from "./home/ElderlyWelcome.jsx";
-import Volunteers from "./pages/Volunteers.jsx";
-
+import Volunteers from "./home/Volunteers.jsx";
+import PageVolunteer from "./home/PageVolunteer.jsx";
 // Make sure this path is correct
 
 import Login from "./home/login";
@@ -27,7 +27,7 @@ function App() {
         <Route path="/ElderProfile" element={<ElderProfile />} />
         <Route path="/ElderWelcome" element={<ElderWelcome />} />
         <Route path="/Volunteers" element={<Volunteers />} />
-
+        <Route path="/pagevolunteer" element={<PageVolunteer />} />
 
       </Routes>
     </Router>
